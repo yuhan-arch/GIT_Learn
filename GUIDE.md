@@ -57,14 +57,13 @@ graph LR
         G["📸 施工日誌快照<br/>(Local Commit)"]
     end
 
-    A -- "1. Fork (影印副本)" --> D
-    D -- "2. Clone (帶圖紙回工地)" --> E
-    E -- "3. Status (檢查工地)" --> E
-    E -- "4. Add (標註驗收範圍)" --> F
-    F -- "5. Commit (拍照存證並記錄)" --> G
-    G -- "6. Push (同步回雲端工作室)" --> D
-    A -- "7. Sync Fork (總部發布修正)" --> D
-    D -- "8. Pull (從工作室下載修正)" --> E
+    A -- "1. Fork" --> D
+    D -- "2. Clone" --> E
+    E -- "3. Add" --> F
+    F -- "4. Commit" --> G
+    G -- "5. Push" --> D
+    A -- "6. Sync Fork" --> D
+    D -- "7. Pull" --> E
 
     style A fill:#f5f5f5,stroke:#333
     style D fill:#e1f5fe,stroke:#01579b
